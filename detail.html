@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swallows</title>
+    <link rel="stylesheet" href="css/Detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <div><button type="menu" style="border: 1px solid #fff;"><a href="style.html"><i class="fas fa-arrow-left"></i></a></button></div>
+    <div class="container">
+        <div class="img1">
+            <img src="images (11).jpeg" alt="">
+        </div>
+        <div class="img2" style="display: flex;">
+            <img src="images (14).jpeg" alt="" style="width: 20%; height: 50px;">
+            <img src="images (44).jpeg" alt="" style="width: 20%; height: 50px;">
+        </div>
+        <div class="heroSection">
+            <h2 style="text-align: center; margin-top: 20px;">Rice & BBQ chicken - Small Valule Munch</h2>
+            <p><i class="fas fa-naira-sign">5,950.00</i></p>
+            <p style="font-family: sans-serif; word-wrap: break-word;">Rice stewd served with barbecued Chicken and your choice of Jollof of friend rice</p>
+        </div>
+    
+    </div>
+    <div class="sumUp" style="align-items: center;">
+        <button  style="background-color: whitesmoke;" id="decreasement"><i class="fas fa-minus"></i></button>
+        <input disabled type="number" id="count" value="1" style="width: 50%; border-radius: 15%; height: 20px; align-items: center;">
+        <button  style="background-color: lightgreen;" id="increasement"><i class="fas fa-plus"></i></button>
+    </div>
+  <div class="sumUp1" style="align-items: center;">
+    <button id="apply-button" style="align-items: center;" class="btn">Add for NGN : #6025.00</button>
+  
+  </div>
+
+    <script>
+        const decreasementButton = document.getElementById ('decreasement');
+        const increasementButton = document.getElementById('increasement');
+        const countinput = document.getElementById('count');
+        const applyButton = document.getElementById('apply-button');
+       
+        let count = 1;
+        let currentValue = 6025.00;
+
+      decreasementButton.addEventListener('click', () => {
+        count--;
+         if (count < 1) {
+            count = 1;
+         }
+         countinput.value = count;
+      });
+
+      increasementButton.addEventListener('click', ()=> {
+        count++;
+        countinput.value = count;
+      });
+      applyButton.addEventListener('click', () => {
+        currentValue += count * 6025.00;
+        applyButton.textContent = `Add for NGN : #${currentValue}`;
+      });
+    </script>
+</body>
+</html>
