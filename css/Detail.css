@@ -40,11 +40,11 @@ body{
     width: 30%;
 }
 .sumUp{
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 35%;
+    margin-right: 35%;
     margin-top: 20px;
     display: flex;
-    width: 15%;
+    width: 30%;
     gap: 5px;
 }
 .sumUp1{
