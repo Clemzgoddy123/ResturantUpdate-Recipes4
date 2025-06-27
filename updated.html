@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swallows </title>
+    <link rel="stylesheet" href="css/updated.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div><img src="logopng.png" alt="" style="height: 40px; width: 40px;"></div>
+        <div class="menu-toggle" id="toggleMenu">
+          <i class="fas fa-sliders"></i>
+        </div>
+        <ul class="nav-list" id="navList">
+          <li><a href="#"><i class=""></i>Home</a></li>
+          <li class="dropdown">
+            <a href="#"><i class=""></i>Service <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"> <i class=""></i>Food</a></li>
+              <li><a href="#"><i class=""></i>Lodge</a></li>
+              <li><a href="#"><i class=""></i>Consultation</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class=""></i>About</a></li>
+          <li><a href="#"><i class=""></i>Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="wrapper">
+        <div class="food_menu">
+          <h2 style="text-align: center; text-transform: uppercase;">Sort by</h2>
+          <ul>
+              <li><a href="#"><i class="fab fa-codiepie"></i>Near Me</a></li>
+              <li><a href="#"><i class="fas fa-thumbs-up"></i>Rating</a></li>
+              <li><a href="#"><i class="fas fa-motorcycle"></i>Delivery Fees</a></li>
+          </ul>
+          <h2 style="font-size: large;">popular filters</h2>
+          <ul>
+              <li><a href="#"><i class="fas fa-drumstick-bite"></i>Chicken</a></li>
+              <li><a href="#"><i class="fas fa-plate-wheat"></i>Jellof</a></li>
+              <li><a href="#"><i class="fas fa-bucket"></i>Local food</a></li>
+          </ul>
+          <h2>More filters</h2>
+          <ul>
+              <li><a href="#"><i class="fas fa-plate-wheat"></i>Amala</a></li>
+              <li><a href="#"><i class="fas fa-bread-slice"></i>Bakery</a></li>
+              <li><a href="#"><i class="fas fa-bacon"></i>Breakfast</a></li>
+              <li><a href="#"><i class="fas fa-bacon"></i>Burgers</a></li>
+              <li><a href="#"><i class="fas fa-bacon"></i>Chinses</a></li>
+          </ul>
+      </div>
+      <div><button type="menu" style="border: 1px solid #fff;"><a href="style.html"><i class="fas fa-arrow-left"></i></a></button></div>
+     <div class="food">
+      <div class="img1">
+        <img src="images (11).jpeg" alt="">
+    </div>
+    <div class="img2" style="display: flex;">
+        <img src="images (14).jpeg" alt="" style="width: 20%; height: 50px;">
+        <img src="images (44).jpeg" alt="" style="width: 20%; height: 50px;">
+    </div>
+  
+    <div class="heroSection">
+      <h2 style="text-align: center; margin-top: 20px;">Rice & BBQ chicken - Small Valule Munch</h2>
+      <p style="margin-left: 10%;"><i class="fas fa-naira-sign">5,950.00</i></p>
+      <p style="font-family: sans-serif; word-wrap: break-word; margin-left: 10%;">Rice stewd served with barbecued Chicken and your choice of Jollof of friend rice</p>
+  </div>
+  <div class="sumUp" style="align-items: center;">
+    <button  style="background-color: whitesmoke;" id="decreasement"><i class=""></i>-</button>
+    <input disabled type="number" id="count" value="1" style="width: 100%; border-radius: 15%; height: 20px; text-align: center; align-items: center;">
+    <button  style="background-color: lightgreen;" id="increasement"><i class=""></i>+</button>
+</div>
+<div class="sumUp1" style="align-items: center;">
+  <button id="apply-button" style="align-items: center;" class="btn">Add for NGN : #7525.00</button>
+
+</div>
+</div>
+     
+    
+
+</section>
+    <div><hr style="background-color: black; height: 5px;"></div>
+    <div class="footer">
+        <div class="footer1">
+            <p style="text-align: center; font-size: larger;">About</p>
+            <p style="word-wrap: break-word; font-family: sans-serif; text-align: center;">DEFOOD is a high class Resturant, made available <br> for both the rich, poor, hungry etc,it main goal is to <br> cure the hunger of the nation</p>
+        </div>
+        <div class="footer2">
+            <p style="text-align: center; font-size: larger;">Contact Us</p>
+            <p style="word-wrap: break-word; font-family: sans-serif; text-align: center;">+2348102888549</p>
+            <p style="word-wrap: break-word; font-family: sans-serif; text-align: center;">+2349051382069</p>
+            <p style="word-wrap: break-word; font-family: sans-serif; text-align: center;">+2349017402529</p>
+        </div>
+        <div class="footer3">
+            <p style="text-align: center; font-size: larger;">Follow Us </p>
+            <p style="word-wrap: break-word; font-family: sans-serif; text-align: center;">Clementchukwu@facebook <i class="fab fa-facebook"></i></p>
+            <p style="word-wrap: break-word; font-family: sans-serif; text-align: center;">JohnRacheal@gmail.com <i class="fab fa-gofore"></i></p>
+            <p style="word-wrap: break-word; font-family: sans-serif; text-align: center;">WHATSAPP@+2348102888549 <i class="fab fa-whatsapp-square"></i></p>
+        </div>
+    </div>
+
+
+      <script>
+        const toggle = document.getElementById('toggleMenu');
+        const navList = document.getElementById('navList');
+      
+        toggle.addEventListener('click', () => {
+          navList.classList.toggle('active');
+        });
+      </script>
+      <script>
+        const decreasementButton = document.getElementById ('decreasement');
+        const increasementButton = document.getElementById('increasement');
+        const countinput = document.getElementById('count');
+        const applyButton = document.getElementById('apply-button');
+       
+        let count = 1;
+        let currentValue = 7525.00;
+
+      decreasementButton.addEventListener('click', () => {
+        count--;
+         if (count < 1) {
+            count = 1;
+         }
+         countinput.value = count;
+      });
+
+      increasementButton.addEventListener('click', ()=> {
+        count++;
+        countinput.value = count;
+      });
+      applyButton.addEventListener('click', () => {
+        currentValue += count * 7525.00;
+        applyButton.textContent = `Add for NGN : #${currentValue}`;
+      });
+    </script>
+</body>
+</html>

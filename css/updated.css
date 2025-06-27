@@ -92,8 +92,8 @@ html, body{
     align-items: center;
     margin: 0px 0px;
     gap: 30px;
-    color: #fff;
     background-color: #444;
+    color: #fff;
 }
 
 body{
@@ -140,55 +140,94 @@ section{
 }
 .food{
   width: 70%;
-}
-.food1{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 30px;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 5%;
+}
+
+.img1 img{
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 200px;
+    width: 60%;
+    border: 1px solid #fff;
+}
+.img2{
+    margin-top: 10px;
+    gap: 10px;
+    margin-right: 60%;
+
+}
+.img2 img{
+    width: 100%;
+    border: 3px solid #fff;
+    box-shadow: 10px 10px 10px;
 }
 .food1 img{
   height: 100px;
   width: 100%;
 }
-
-
-
- /* Responsive */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    margin-top: 10px;
-  }
-
-  .nav-list.active {
-    display: flex;
-  }
-
-  .nav-list li {
-    text-align: center;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    position: static;
-  }
-  .food1{
-    display: block; 
-  }
-  .food_menu{
+.sumUp button{
+    height: 30px;
+    border-radius: 50%;
     width: 30%;
-  }
-  .food_menu ul li{
-    padding: 30px;
-   
+}
+.sumUp{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20px;
+    display: flex;
+    width: 30%;
+    gap: 5px;
+}
+.sumUp1{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    width: 80%;
+}   
+.sumUp1 button{
+    width: 100%;
+    height: 50px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      margin-top: 10px;
+    }
+  
+    .nav-list.active {
+      display: flex;
+    }
+  
+    .nav-list li {
+      text-align: center;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      position: static;
+    }
+    .food1{
+      display: block; 
+    }
+    .food_menu{
+      width: 30%;
+    }
+    .food_menu ul li{
+      padding: 10px;
      
-  }
-}  
+       
+    }
+  }  
